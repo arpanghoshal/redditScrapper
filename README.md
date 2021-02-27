@@ -1,7 +1,8 @@
 # Reddit Scrapper
 
 This is a Python app built on a Flask framework for scrapping first 3 top titles of a subreddit topic.
-For detail explanation refer to this blog. [How to create a bot to extract content from reddit with BeautifulSoup?](https://arpanghoshal.medium.com/how-to-create-a-bot-to-extract-content-from-reddit-with-beautifulsoup-4f528c339ab8) by Arpan Ghoshal
+For detail explanation refer to this blog. 
+[How to create a bot to extract content from reddit with BeautifulSoup?](https://arpanghoshal.medium.com/how-to-create-a-bot-to-extract-content-from-reddit-with-beautifulsoup-4f528c339ab8) by Arpan Ghoshal
 
 ### Requirements
 - Python3
