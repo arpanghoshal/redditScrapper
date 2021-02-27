@@ -21,5 +21,5 @@ To change the host or port, edit config in app.py
 #### Currently, the app is running on development server. For production, run it on gunicorn server.
 
 ## Output
-![Output Generated](https://github.com/arpanghoshal/redditScrapper/blob/main/output.png)
+![Output Generated](https://github.com/arpanghoshal/redditScrapper/blob/main/output.jpg)
 
