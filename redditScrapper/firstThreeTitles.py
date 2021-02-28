@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def getFirstThreeTitles(subreddit):
+def getFirstThreeTitles(subreddit,num):
 	URL = "https://www.reddit.com/r/"+subreddit+"/top"
 	
 	headers = {'User-Agent':'Mozilla/5.0'}
@@ -10,12 +10,13 @@ def getFirstThreeTitles(subreddit):
 	soup=BeautifulSoup(response.content,'lxml')
 	
 	#loops cannot be used- reddit restrictions
-	title1 =soup.select('._eYtD2XCVieq6emjKBH3m')[0].get_text()
-	title2 =soup.select('._eYtD2XCVieq6emjKBH3m')[1].get_text()
-	title3 =soup.select('._eYtD2XCVieq6emjKBH3m')[2].get_text()
-	
-	
-	return [title1,title2,title3]
+	i=0
+	titles = []
+	while(i<num):
+		title =soup.select('._eYtD2XCVieq6emjKBH3m')[i].get_text()
+		titles.append(title)
+		i+=1
+	return titles
 	
 """
 
